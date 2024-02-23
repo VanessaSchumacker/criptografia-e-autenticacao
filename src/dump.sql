@@ -6,3 +6,10 @@ create table carros (
     cor text not null,
     descricao text
 );
+
+create table usuario(
+  id serial primary key,
+  nome text not null,
+  email text not null unique,
+  senha text not null
+);
